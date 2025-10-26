@@ -1,0 +1,91 @@
+# ==========================
+# 🐍 Python & uv Environment
+# ==========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments (uv, venv, etc.)
+.venv/
+.uv/
+.env/
+env/
+venv/
+ENV/
+*.env
+
+# ==========================
+# 🧰 CrewAI / Project Config
+# ==========================
+# Ignore local CrewAI or API config files that contain keys/tokens
+*.crewai/
+crewai_logs/
+agent_logs/
+config_local.yaml
+secrets.yaml
+*.key
+*.pem
+*.json  # <- important if you store BigQuery credentials locally
+
+# ==========================
+# 🗃️ BigQuery / Cloud / Data Files
+# ==========================
+# Ignore credentials and data exports
+*.csv
+*.tsv
+*.parquet
+*.db
+*.sqlite3
+*.bak
+data/
+tmp/
+output/
+logs/
+
+# ==========================
+# 💻 Frontend (if you add a React or web interface)
+# ==========================
+# Node & build output
+node_modules/
+dist/
+build/
+.cache/
+*.lock
+package-lock.json
+yarn.lock
+
+# ==========================
+# 🧪 Notebooks & Experiments
+# ==========================
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# ==========================
+# 🧮 Tools, Testing & Coverage
+# ==========================
+.mypy_cache/
+.pytest_cache/
+.coverage
+coverage/
+htmlcov/
+
+# ==========================
+# 🧑‍💻 IDE & OS Files
+# ==========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# ==========================
+# 🧱 Build & Distribution
+# ==========================
+build/
+dist/
+*.egg-info/
+.eggs/
+
